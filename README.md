@@ -6,6 +6,8 @@
 
 *A centralized web-based platform designed to revolutionise higher education in Sri Lanka by improving transparency, accessibility, and decision-making for students and institutions alike.*
 
+🚀 *Website Link:* 👉 [http://localhost/EduConnectSL/index.php]
+
 [![GitHub Stars](https://img.shields.io/github/stars/NethuAS26/EduConnect-SL-?style=social)](https://github.com/NethuAS26/EduConnect-SL-/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/NethuAS26/EduConnect-SL-?style=social)](https://github.com/NethuAS26/EduConnect-SL-/network/members)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
