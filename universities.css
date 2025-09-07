@@ -1,0 +1,578 @@
+/* Universities Page Specific Styles */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.9), rgba(16, 185, 129, 0.8));
+    color: white;
+    padding: 140px 0 80px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.page-header-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.page-header-content p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* University Type Tabs */
+.university-tabs {
+    background-color: var(--bg-secondary);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-primary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--text-secondary);
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Universities Section */
+.universities-section {
+    padding: 4rem 0;
+}
+
+.universities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.university-card {
+    background: var(--bg-primary);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.university-header {
+    position: relative;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--primary-light), var(--bg-secondary));
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.university-logo {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.university-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+.university-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.university-badge.private {
+    background: var(--accent-color);
+    color: white;
+}
+
+.university-badge.government {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.university-content {
+    padding: 2rem;
+}
+
+.university-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.university-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.university-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius);
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.university-details {
+    margin-bottom: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.detail-item i {
+    color: var(--primary-color);
+    width: 16px;
+}
+
+.university-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.university-actions .btn {
+    flex: 1;
+    min-width: 120px;
+    justify-content: center;
+}
+
+/* Comparison Section */
+.comparison-section {
+    background-color: var(--bg-secondary);
+    padding: 4rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.comparison-table-container {
+    overflow-x: auto;
+    background: var(--bg-primary);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+
+.comparison-table th:first-child {
+    background: var(--text-primary);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary);
+}
+
+.comparison-table td:first-child {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge.private {
+    background: var(--accent-color);
+    color: white;
+}
+
+.badge.government {
+    background: var(--secondary-color);
+    color: white;
+}
+
+/* Quick Stats */
+.quick-stats {
+    padding: 4rem 0;
+    background: var(--bg-primary);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stats-grid .stat-item {
+    background: var(--bg-primary);
+    border: 2px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.stats-grid .stat-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.stats-grid .stat-number {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.stats-grid .stat-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.cta-content p {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    min-width: 180px;
+}
+
+.cta-buttons .btn-outline {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.cta-buttons .btn-outline:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .universities-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .university-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .comparison-table {
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .page-header-content p {
+        font-size: 1.125rem;
+    }
+    
+    .tabs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .universities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .university-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .university-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .university-actions {
+        flex-direction: column;
+    }
+    
+    .university-actions .btn {
+        width: 100%;
+    }
+    
+    .comparison-table-container {
+        margin: 0 -20px;
+        border-radius: 0;
+    }
+    
+    .comparison-table {
+        min-width: 500px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 120px 0 60px;
+    }
+    
+    .page-header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .university-content {
+        padding: 1.5rem;
+    }
+    
+    .university-header {
+        padding: 1.5rem;
+    }
+    
+    .university-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Animation Classes */
+.university-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.university-card:nth-child(1) { animation-delay: 0.1s; }
+.university-card:nth-child(2) { animation-delay: 0.2s; }
+.university-card:nth-child(3) { animation-delay: 0.3s; }
+.university-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Filter Animation */
+.university-card[data-type] {
+    transition: all 0.3s ease;
+}
+
+.university-card.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+/* Smooth Scrolling for Anchor Links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus States for Accessibility */
+.tab-btn:focus,
+.university-actions .btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Loading States */
+.university-card.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.university-card.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid var(--primary-color);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* Enhanced University Actions */
+.university-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.university-actions .btn {
+    flex: 1;
+    min-width: 120px;
+    max-width: 150px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Responsive Design for University Actions */
+@media (max-width: 768px) {
+    .university-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .university-actions .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
